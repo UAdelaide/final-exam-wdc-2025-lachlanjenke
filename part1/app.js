@@ -14,6 +14,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+let db;
+
 (async () => {
     try {
         // Connect to a specified database
@@ -24,7 +26,7 @@ app.use(cookieParser());
             database: 'dogwalks'
         });
 
-        
+        db
     } catch (err) {
         // Code here
     }
