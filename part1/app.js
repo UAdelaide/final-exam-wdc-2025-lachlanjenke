@@ -21,8 +21,10 @@ app.use(cookieParser());
             host: 'localhost',
             user: 'root',
             password: '',
-            database
-        })
+            database: 'dogwalks'
+        });
+
+        
     } catch (err) {
         // Code here
     }
