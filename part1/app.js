@@ -17,7 +17,9 @@ app.use(cookieParser());
 (async () => {
     try {
         // Connect to a specified database
-        const connection = await
+        const connection = await mysql.createConnection({
+
+        })
     } catch (err) {
         // Code here
     }
