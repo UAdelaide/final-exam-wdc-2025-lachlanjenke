@@ -15,7 +15,8 @@ app.use(cookieParser());
 
 (async () => {
     try {
-        //
+        // Connect to a specified database
+        const 
     } catch (err) {
         // Code here
     }
