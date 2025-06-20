@@ -19,7 +19,9 @@ app.use(cookieParser());
         // Connect to a specified database
         const connection = await mysql.createConnection({
             host: 'localhost',
-            user: 'root'
+            user: 'root',
+            password: '',
+            database
         })
     } catch (err) {
         // Code here
