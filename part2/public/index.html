@@ -65,7 +65,10 @@
 
             for (const dog of this.dogs) {
               const imageResponse = await fetch('https://dog.ceo/api/breeds/image/random');
-              if (imageResponse)
+              if (imageResponse.ok) {
+                const imageData = await imgRes.json();
+                dog.imageUrl = imageData
+              }
             }
           } catch (err) {
             console.error('Error getting dog list', err);
