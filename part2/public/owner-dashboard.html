@@ -129,6 +129,7 @@
 
         async function listOwnedDogs() {
           try {
+            // Fetch the response from the api
             const response = await fetch('/api/users/ownedDogs');
             if (!response.ok) {
               ownedDogs.value = [];
