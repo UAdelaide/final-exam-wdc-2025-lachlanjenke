@@ -77,7 +77,11 @@
           }
         }
 
-        async 
+        async function getCurrentUser() {
+          try {
+            const response = await fetch('/api/users/me');
+          }
+        }
 
         onMounted(() => {
           loadWalkRequests();
