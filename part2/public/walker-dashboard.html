@@ -46,7 +46,7 @@
         const walks = ref([]);
         const message = ref('');
         const error = ref('');
-        const user = 3;
+        const user;
 
         async function loadWalkRequests() {
           try {
@@ -83,7 +83,7 @@
 
             if (!res.ok) throw new Error(result.error || 'Checking id failed');
 
-            const userData = 
+            const userData =
 
           }
         }
