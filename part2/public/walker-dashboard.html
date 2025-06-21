@@ -86,7 +86,7 @@
             user.value = await response.json();
             console.log('Id retrieved');
           } catch (err) {
-            console.error('errorloading ')
+            console.error('error getting current user', err);
           }
         }
 
