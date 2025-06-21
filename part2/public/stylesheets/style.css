@@ -167,10 +167,9 @@ section {
 }
 
 .dashboard {
-    display: flex;
+
 }
 
 .logout {
-    display: flex;
-    justify-content: flex-end;
+    margin: left;
 }
