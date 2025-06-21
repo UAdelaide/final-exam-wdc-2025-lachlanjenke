@@ -66,7 +66,7 @@
             for (const dog of this.dogs) {
               const imageResponse = await fetch('https://dog.ceo/api/breeds/image/random');
               if (imageResponse.ok) {
-                const imageData = await imgRes.json();
+                const imageData = await imageResponse.json();
                 dog.imageUrl = imageData.message;
               } else {
                 dog.imageUrl = ''
