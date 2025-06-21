@@ -30,7 +30,7 @@
               <strong>Location:</strong> {{ walk.location }}<br>
               <strong>Owner:</strong> {{ walk.owner_name }}
             </p>
-            <button type=button class="btn btn-outline-success" @click="applyToWalk()">Apply</button>
+            <button type=button class="btn btn-outline-success" @click="applyToWalk(walk.request_id)">Apply</button>
           </div>
         </div>
       </div>
@@ -58,9 +58,9 @@
           }
         }
 
-        async function applyToWalk() {
+        async function applyToWalk(requestId) {
           try {
-            const res = await fetch(`/api/walks/${user.user_id}/apply`, {
+            const res = await fetch(`/api/walks/${requestId}/apply`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ walker_id: user })
