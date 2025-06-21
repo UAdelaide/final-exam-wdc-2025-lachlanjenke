@@ -26,15 +26,17 @@
         <img :src="dogSrc" src="image" alt="" width="300px" style="height: auto;" @click="loadRandomImage()">
         <!-- Misleading click here-->
         <h3>Click to load image</h3>
+        <!-- Hard coded dog information -->
         <p>
             Dog Name: Bella<br>
             Dog Size: Medium<br>
             Dog Owner: Alice<br>
         </p>
     </div>
-
+    <!-- Load vue-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script defer>
+        // Create Vue app
         const { createApp } = Vue;
 
         createApp({
