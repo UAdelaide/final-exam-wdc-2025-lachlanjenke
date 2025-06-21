@@ -11,7 +11,7 @@
   <div id="app" class="container py-4">
     <div class="dashboard">
       <h1 class="mb-4 text-success">Walker Dashboard</h1>
-      
+      <button class="logout" type="submit" onclick="logout()">Logout</button>
     </div>
     <!-- Alert messages -->
     <div v-if="message" class="alert alert-info">{{ message }}</div>
@@ -91,5 +91,6 @@
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/javascripts/page.js" defer></script>
 </body>
 </html>
