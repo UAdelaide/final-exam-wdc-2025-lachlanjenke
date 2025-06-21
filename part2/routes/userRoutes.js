@@ -68,12 +68,14 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
+  // Destory Session
   req.session.destroy((err) => {
     if (err) {
+      // Return error if 
       console.error("Logout unsuccessful due to ", err);
       return res.status(500).json({ error: "Could not logout" });
     }
-
+    // Clear cookie
     res.clearCookie('dog_walk');
     return res.json({ message: 'logged out' });
   });
