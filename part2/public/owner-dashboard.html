@@ -93,7 +93,7 @@
 
         async function loadWalks() {
           try {
-            // Fetch users 
+            // Fetch owners requests
             const res = await fetch('/api/walks/ownerWalks');
             walks.value = await res.json();
           } catch (err) {
