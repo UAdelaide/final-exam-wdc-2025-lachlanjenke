@@ -23,7 +23,7 @@
                 async loadRandomImage() {
                     try {
                         const dogImage = await fetch('https://dog.ceo/api/breeds/image/random');
-                        const dogData = res.json();
+                        const dogData = dogImage.json();
                         if (dogData.status === 'success') {
                             dogSrc = dogData.message;
                         }
