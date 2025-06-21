@@ -86,7 +86,7 @@ router.post('/logout', (req, res) => {
 router.get('/ownedDogs', async (req, res) => {
   const ownerId = req.query.owner_id;
   try {
-    
+    const [ownerRows] = await.db
   }
 });
 module.exports = router;
