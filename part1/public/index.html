@@ -25,7 +25,7 @@
         <!-- Image is clickable but this isnt obvious, redundant src attribute, empty alt attribite-->
         <img :src="dogSrc" src="image" alt="" width="300px" style="height: auto;" @click="loadRandomImage()">
         <!-- Misleading click here-->
-        <h3>Click to load image</h3>
+        <h3 @click="">Click to load image</h3>
         <!-- Hard coded dog information -->
         <p>
             Dog Name: Bella<br>
@@ -66,7 +66,7 @@
                     }
                 },
                 pageInstructions() {
-                    
+                    alert('Click on the image');
                 }
             },
             async mounted() {
