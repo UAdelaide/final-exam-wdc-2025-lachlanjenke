@@ -71,8 +71,10 @@ router.post('/logout', async (req, res) => {
   req.session.destroy(err =>) {
     if (err) {
       console.error("Logout unsuccessful due to ", err);
-      return res.status(500).send()
+      return res.status(500).send('Unable to logout');
     }
+
+    res.clearCookie
   }
 });
 
