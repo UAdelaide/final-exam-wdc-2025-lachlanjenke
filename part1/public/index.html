@@ -14,8 +14,9 @@
         createApp({
             data() {
                 return {
-                },
-                methods: {
+                };
+            },
+            methods: {
                         async loadRandomImage() {
                             try {
                                 const dogImage = await fetch('https://dog.ceo/api/breeds/image/random');
@@ -25,8 +26,7 @@
                         }
                     }
                 }
-            }
-        })
+        )
     </script>
      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </body>
