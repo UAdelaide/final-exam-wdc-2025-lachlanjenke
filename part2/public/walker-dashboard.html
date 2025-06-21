@@ -82,7 +82,7 @@
             // Fetch session data
             const response = await fetch('/api/users/me');
 
-            // Check ersponse
+            // Check response
             if (!response.ok) throw new Error('Checking id failed');
 
             user.value = await response.json();
