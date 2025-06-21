@@ -168,6 +168,8 @@ section {
 
 .dashboard {
     display: flex;
+    justify-content: space-between;
+    
 }
 
 .logout {
