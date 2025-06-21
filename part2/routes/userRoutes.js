@@ -84,7 +84,8 @@ router.post('/logout', (req, res) => {
 
 // List owned dogs
 router.get('/ownedDogs', async (req, res) => {
-  const ownerId = req.query.owner_id;
+  // Get the user id
+  const ownerId = req.session.user.user_id;
   try {
     // Query the database
     const [ownerRows] = await db.execute('SELECT dog_id, name, size FROM Dogs WHERE owner_id', [ownerId]);
