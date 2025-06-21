@@ -15,6 +15,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
+
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
