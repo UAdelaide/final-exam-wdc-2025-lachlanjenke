@@ -10,6 +10,7 @@
         <img v-if="dogSrc" :src="dogSrc || ''" alt="dog" width="300px" style="height: auto;">
     </div>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
         const { createApp } = Vue;
 
@@ -34,10 +35,9 @@
                 }
             },
             async mounted() {
-                loadRandomImage();
+                await this.loadRandomImage();
             }
         }).mount("#app")
     </script>
-     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </body>
 </html>
