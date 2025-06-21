@@ -42,12 +42,15 @@
         createApp({
             data() {
                 return {
+                    // Dog src attribute
                     dogSrc: ''
                 };
             },
             methods: {
+                // Load a random image from the apie
                 async loadRandomImage() {
                     try {
+                        // Fetch the image
                         const dogImage = await fetch('https://dog.ceo/api/breeds/image/random');
                         const dogData = await dogImage.json();
                         if (dogData.status === 'success') {
