@@ -128,7 +128,7 @@
 
         async function listOwnedDogs() {
           try {
-            const response = await fetch('/api/users/dogs');
+            const response = await fetch('/api/users/ownedDogs');
             if (!response.ok) {
               ownedDogs.value = [];
               error.value = 'Could not load dogs';
@@ -138,7 +138,7 @@
 
             const dogData = await response.json();
             ownedDogs.value = data;
-            
+
           } catch (err) {
             error.value = 'Could not load your dogs';
             console.error('Error loading dogs',err);
