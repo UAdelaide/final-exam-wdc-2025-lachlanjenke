@@ -184,6 +184,7 @@ section {
   border-collapse: collapse;
   width: 640px;
   font-size: 120%;
+  margin: 1em;
 }
 
 #dogTable td,
