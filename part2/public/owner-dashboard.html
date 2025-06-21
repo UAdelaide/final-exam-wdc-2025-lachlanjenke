@@ -137,6 +137,7 @@
             const dogData = await res.json();
             ownedDogs.value = data;
           } catch (err) {
+            error.value = 'Could not load your dogs';
             console.error('Error loading dogs',err);
           }
         }
