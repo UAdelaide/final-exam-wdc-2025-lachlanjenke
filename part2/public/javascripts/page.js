@@ -215,7 +215,7 @@ function logout(){
     var xmlhttp = new XMLHttpRequest();
 
     // Open connection to server & send the post data using a POST request
-    xmlhttp.open("POST", "/users/logout", true);
+    xmlhttp.open("POST", "/api/users/logout", true);
     xmlhttp.send();
 
 }
