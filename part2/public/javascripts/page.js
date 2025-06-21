@@ -189,9 +189,9 @@ function login(){
         if (this.readyState == 4 && this.status == 200) {
             const response = JSON.parse(this.responseText);
             if (response.user.role === 'owner') {
-                window.location.href = "/owner-dashboard";
+                window.location.href = "/owner-dashboard.html";
             } else {
-                window.location.href = '/walker-dashboard';
+                window.location.href = '/walker-dashboard.html';
             }
         } else if (this.readyState == 4 && this.status >= 400) {
             alert("Login failed");
