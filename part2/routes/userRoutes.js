@@ -70,7 +70,8 @@ router.post('/login', async (req, res) => {
 router.post('/logout', async (req, res) => {
   req.session.destroy(err =>) {
     if (err) {
-      console.error("Logout unc")
+      console.error("Logout unsuccessful due to ", err);
+      return res.status(500).send()
     }
   }
 });
