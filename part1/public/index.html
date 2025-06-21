@@ -25,11 +25,11 @@
                         const dogImage = await fetch('https://dog.ceo/api/breeds/image/random');
                         const dogData = dogImage.json();
                         if (dogData.status === 'success') {
-                            dogSrc = dogData.message;
+                            this.dogSrc = dogData.message;
                         }
                     } catch (err) {
                         console.log('Error retrieving image');
-                        dogSrc = '';
+                        this.dogSrc = '';
                     }
                 }
             },
