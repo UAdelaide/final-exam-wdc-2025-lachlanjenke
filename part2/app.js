@@ -28,8 +28,7 @@ app.get('/api/dogs', async (req, res) => {
   try {
     // Query the database, change anmes as required, join tables for response
     const [dogs] = await db.execute(`
-        SELECT d.name AS dog_name, d.size, u.username AS owner_username FROM Dogs AS d
-        INNER JOIN Users AS u ON d.owner_id = u.user_id`);
+        SELECT * FROM Dogs);
     // Send the json response
     res.json(dogs);
   } catch (err) {
