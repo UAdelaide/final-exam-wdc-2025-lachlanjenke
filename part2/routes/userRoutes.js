@@ -71,7 +71,7 @@ router.post('/logout', (req, res) => {
   // Destory Session
   req.session.destroy((err) => {
     if (err) {
-      // Return error if 
+      // Return error if session cannot me deleted
       console.error("Logout unsuccessful due to ", err);
       return res.status(500).json({ error: "Could not logout" });
     }
