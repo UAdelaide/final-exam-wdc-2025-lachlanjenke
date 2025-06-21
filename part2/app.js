@@ -24,5 +24,19 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
 
+app.get('/api/dogs', async (req, res) => {
+  try {
+    // Query the database, change anmes as required, join tables for response
+    const [dogs] = await db.execute(`
+        SELECT d.name AS dog_name, d.size, u.username AS owner_username FROM Dogs AS d
+        INNER JOIN Users AS u ON d.owner_id = u.user_id`);
+    // Send the json response
+    res.json(dogs);
+  } catch (err) {
+    // Send the error message
+    res.status(500).json({ error: 'Failed to fetch dog list' });
+  }
+});
+
 // Export the app instead of listening here
 module.exports = app;
