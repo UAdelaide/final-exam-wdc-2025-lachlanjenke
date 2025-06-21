@@ -129,7 +129,10 @@
         async function listOwnedDogs() {
           try {
             const response = await fetch('/api/dogs');
-            if (!reponse.ok)
+            if (!reponse.ok) {
+              this.ownedDogs = '';
+              return 
+            }
           } catch (err) {
 
           }
