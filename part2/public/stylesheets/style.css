@@ -187,20 +187,12 @@ section {
   font-size: 120%;
 }
 
-.rank-table td,
-.rank-table th {
+#dogTable td,
+#dogTableth {
   border-style: none none solid none;
   border-width: 0px 0px 1px 0px;
   padding: 8px;
   margin: 0px;
-}
-
-.rank-table th {
-  cursor: pointer;
-}
-
-.rank-table tr.filtered {
-  display: none;
 }
 
 #dogTabletr:nth-child(even) {
