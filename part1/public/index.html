@@ -54,7 +54,7 @@
                 };
             },
             methods: {
-                // Load a random image from the apie
+                // Load a random image from the api
                 async loadRandomImage() {
                     try {
                         // Fetch the image
@@ -65,6 +65,7 @@
                             // Set image src
                             this.dogSrc = dogData.message;
                         }
+                        alert('Image changed');
                     } catch (err) {
                         // Log error
                         console.log('Error retrieving image');
