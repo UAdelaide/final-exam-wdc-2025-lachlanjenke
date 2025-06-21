@@ -75,7 +75,7 @@ router.post('/logout', async (req, res) => {
     }
 
     res.clearCookie('dog_walk');
-
+    res.json({ message: 'logged out' });
   }
 });
 
