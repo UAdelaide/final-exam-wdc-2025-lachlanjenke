@@ -132,16 +132,19 @@
             // Fetch the response from the api
             const response = await fetch('/api/users/ownedDogs');
             if (!response.ok) {
+              // If the response is not okay, empty owned dogs
               ownedDogs.value = [];
               error.value = 'Could not load dogs';
               console.error('Error loading dogs');
               return;
             }
 
+            // set data
             const dogData = await response.json();
             ownedDogs.value = dogData;
 
           } catch (err) {
+            // Return error
             error.value = 'Could not load your dogs';
             console.error('Error loading dogs',err);
           }
