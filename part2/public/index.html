@@ -59,12 +59,14 @@
             // Fetch list of dogs
             const response = await fetch('/api/dogs');
             if (!response.ok) {
-              // check response
+              // Checl response
               throw new Error('Failed to fetch dog list');
             }
 
+            // Set dog array
             this.dogs = await response.json();
 
+            // Add in images
             for (const dog of this.dogs) {
               const imageResponse = await fetch('https://dog.ceo/api/breeds/image/random');
               if (imageResponse.ok) {
