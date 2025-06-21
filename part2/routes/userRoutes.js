@@ -81,4 +81,9 @@ router.post('/logout', (req, res) => {
   });
 });
 
+
+// List owned dogs
+router.get('/ownedDogs', async (req, res) => {
+  
+});
 module.exports = router;
