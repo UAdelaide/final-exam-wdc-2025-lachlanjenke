@@ -7,7 +7,7 @@
 
 <body>
     <div id="app">
-        <img v-if="dogSrc" :src="dogSrc" width="300px" style="height: auto;">
+        <img v-if="dogSrc" :src="dogSrc || ''" alt="dog" width="300px" style="height: auto;">
     </div>
 
     <script>
