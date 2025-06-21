@@ -62,7 +62,10 @@
             }
 
             this.dogs = await response.json();
-            
+
+            for (const dog of this.dogs) {
+              const imageResponse = await fetch('')
+            }
           } catch (err) {
             console.error('Error getting dog list', err);
           }
