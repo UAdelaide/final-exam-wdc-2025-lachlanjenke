@@ -11,6 +11,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 // Set up sessions
 app.use(session({
+    key: 'dog_walk'
     secret: 'session_key',
     resave: false,
     saveUninitialized: false
