@@ -56,8 +56,10 @@
       methods: {
         async getDogs() {
           try {
+            // Fetch list of dogs
             const response = await fetch('/api/dogs');
             if (!response.ok) {
+              // check response
               throw new Error('Failed to fetch dog list');
             }
 
