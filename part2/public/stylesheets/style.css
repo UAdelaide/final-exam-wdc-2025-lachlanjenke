@@ -175,7 +175,7 @@ section {
 
 .logout {
     background-color: white;
-    outline: solid red;
+    outline: solid 1px red;
     color: red;
     border-radius: 5px;
 }
