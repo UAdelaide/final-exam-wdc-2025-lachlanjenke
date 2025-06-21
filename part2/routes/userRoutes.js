@@ -67,15 +67,15 @@ router.post('/login', async (req, res) => {
   }
 });
 
-router.post('/logout',  (req, res) => {
-  req.session.destroy(err => {
+router.post('/logout', (req, res) => {
+  req.session.destroy((err) => {
     if (err) {
       console.error("Logout unsuccessful due to ", err);
       return res.status(500).json({ error: "Could not logout" });
     }
 
     res.clearCookie('dog_walk');
-    res.json({ message: 'logged out' });
+    return res.json({ message: 'logged out' });
   });
 });
 
