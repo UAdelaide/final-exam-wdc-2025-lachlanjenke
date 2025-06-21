@@ -56,7 +56,10 @@
       methods: {
         async getDogs() {
           try {
-            const response = await fetch()
+            const response = await fetch('/api/dogs');
+            if (!response.ok) {
+              
+            }
           } catch (err) {
 
           }
