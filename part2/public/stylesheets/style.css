@@ -154,3 +154,8 @@ textarea {
 section {
     display: none;
 }
+
+#app {
+    display: flex;
+    justify-content: center;
+}
