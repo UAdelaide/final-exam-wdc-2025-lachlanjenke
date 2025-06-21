@@ -7,12 +7,3 @@ a {
   color: #00B7FF;
 }
 
-#app {
-  display: flex;
-  justify-content: space-around;
-}
-
-button {
-  width: 50px;
-  height: 25px;
-}
