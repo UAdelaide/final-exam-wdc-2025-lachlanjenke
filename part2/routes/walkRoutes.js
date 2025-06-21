@@ -22,6 +22,7 @@ router.get('/', async (req, res) => {
 // Get all walk requests (for owners to view)
 // GET all walk requests (for walkers to view)
 router.get('/ownerWalks', async (req, res) => {
+  const 
   try {
     const [rows] = await db.query(`
       SELECT wr.*, d.name AS dog_name, d.size, u.username AS owner_name
