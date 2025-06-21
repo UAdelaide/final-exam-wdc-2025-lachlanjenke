@@ -131,8 +131,10 @@
             const response = await fetch('/api/dogs');
             if (!reponse.ok) {
               this.ownedDogs = '';
-              return 
+              console.error('Error loading dogs');
             }
+
+            const 
           } catch (err) {
 
           }
