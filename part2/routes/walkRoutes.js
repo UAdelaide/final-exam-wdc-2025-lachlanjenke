@@ -20,7 +20,6 @@ router.get('/', async (req, res) => {
 });
 
 // Get all walk requests (for owners to view)
-// GET all walk requests (for walkers to view)
 router.get('/ownerWalks', async (req, res) => {
   const ownerId = req.session.user.user_id;
   try {
