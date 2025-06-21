@@ -128,7 +128,8 @@
 
         async function listOwnedDogs() {
           try {
-            
+            const response = await fetch('/api/dogs');
+            if (!reponse.ok)
           } catch (err) {
 
           }
