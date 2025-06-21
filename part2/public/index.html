@@ -33,7 +33,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr
+        <tr v-for="dog in dogs" :key="dog.dog_id"></tr>
       </tbody>
     </table>
   </div>
