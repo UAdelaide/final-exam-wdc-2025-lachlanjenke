@@ -74,7 +74,8 @@ router.post('/logout', async (req, res) => {
       return res.status(500).send('Unable to logout');
     }
 
-    res.clearCookie('dog_walk')
+    res.clearCookie('dog_walk');
+    
   }
 });
 
