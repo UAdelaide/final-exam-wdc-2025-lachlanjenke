@@ -156,6 +156,5 @@ section {
 }
 
 #app {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
