@@ -14,18 +14,19 @@
         createApp({
             data() {
                 return {
+
                 };
             },
             methods: {
-                        async loadRandomImage() {
-                            try {
-                                const dogImage = await fetch('https://dog.ceo/api/breeds/image/random');
-                            } catch (err) {
+                async loadRandomImage() {
+                    try {
+                            const dogImage = await fetch('https://dog.ceo/api/breeds/image/random');
+                        } catch (err) {
 
-                            }
                         }
                     }
                 }
+            }
         )
     </script>
      <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
