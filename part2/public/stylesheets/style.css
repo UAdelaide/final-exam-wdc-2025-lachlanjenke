@@ -156,6 +156,6 @@ section {
 }
 
 #app {
-    text-align: center;
+    margin: auto;
     width: 30%;
 }
