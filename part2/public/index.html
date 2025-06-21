@@ -68,8 +68,9 @@
               if (imageResponse.ok) {
                 const imageData = await imgRes.json();
                 dog.imageUrl = imageData.message;
-              } else
-              dog.imageUrl = ''
+              } else {
+                dog.imageUrl = ''
+              }
             }
             console.log('List retrieved')
           } catch (err) {
