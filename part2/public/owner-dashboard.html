@@ -129,7 +129,7 @@
         async function listOwnedDogs() {
           try {
             const response = await fetch('/api/users/dogs');
-            if (!reponse.ok) {
+            if (!response.ok) {
               ownedDogs.value = '';
               console.error('Error loading dogs');
             }
