@@ -194,7 +194,7 @@ section {
   margin: 0px;
 }
 
-#dogTabletr:nth-child(even) {
+#dogTable tr:nth-child(even) {
   background-color: rgb(184, 184, 184);
 }
 
