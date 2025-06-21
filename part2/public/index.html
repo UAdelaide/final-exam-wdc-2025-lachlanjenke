@@ -58,8 +58,10 @@
           try {
             const response = await fetch('/api/dogs');
             if (!response.ok) {
-              
+              throw new Error('Failed to fetch dog list');
             }
+
+            this.dogs = await response.json();
           } catch (err) {
 
           }
