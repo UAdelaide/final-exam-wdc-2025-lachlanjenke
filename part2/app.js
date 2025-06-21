@@ -28,7 +28,7 @@ app.get('/api/dogs', async (req, res) => {
   try {
     // Query the database, change anmes as required, join tables for response
     const [dogs] = await db.execute(`
-        SELECT * FROM Dogs);
+        SELECT * FROM Dogs`);
     // Send the json response
     res.json(dogs);
   } catch (err) {
