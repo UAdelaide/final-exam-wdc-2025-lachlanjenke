@@ -15,10 +15,10 @@
 
     <form @submit.prevent="login">
       <label for="username">Username</label><br>
-      <input class="login" type="text" name="username" placeholder="Username" v-model="username" required><br>
+      <input class="login" type="text" name="username" placeholder="Username" id="username" required><br>
 
       <label for="password">Password</label><br>
-      <input class="login" type="password" name="password" placeholder="Password" v-model="password" required><br>
+      <input class="login" type="password" name="password" placeholder="Password" id="password" required><br>
       <button type="submit">Log in</button>
     </form>
 
@@ -35,11 +35,6 @@
         return {
           message: 'Welcome to the Dog Walking Service!',
         };
-      },
-      methods: {
-        login() {
-
-        }
       }
     }).mount('#app');
   </script>
