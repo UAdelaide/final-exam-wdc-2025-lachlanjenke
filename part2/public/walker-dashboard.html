@@ -84,8 +84,8 @@
             if (!res.ok) throw new Error(result.error || 'Checking id failed');
 
             user.value = await response.json();
-
-          }
+            console.log('Id ')
+          } catch
         }
 
         onMounted(() => {
