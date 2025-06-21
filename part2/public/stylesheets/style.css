@@ -187,7 +187,7 @@ section {
 }
 
 #dogTable td,
-#dogTableth {
+#dogTable th {
   border-style: none none solid none;
   border-width: 0px 0px 1px 0px;
   padding: 8px;
@@ -195,10 +195,10 @@ section {
 }
 
 #dogTable tr:nth-child(even) {
-  background-color: rgb(184, 184, 184);
+  background-color: rgb(230, 230, 230);
 }
 
 #dogTable th {
   text-align: left;
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(230, 230, 230);
 }
