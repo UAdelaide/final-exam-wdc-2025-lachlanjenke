@@ -83,7 +83,7 @@
             const response = await fetch('/api/users/me');
 
             // Check ersponse
-            if (!response.ok) throw new Error( 'Checking id failed');
+            if (!response.ok) throw new Error('Checking id failed');
 
             user.value = await response.json();
             console.log('Id retrieved');
