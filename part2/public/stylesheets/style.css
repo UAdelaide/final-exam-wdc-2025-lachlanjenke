@@ -166,3 +166,13 @@ section {
     border-radius: 5px;
 }
 
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.logout {
+    margin: left;
+}
