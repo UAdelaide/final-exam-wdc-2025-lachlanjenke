@@ -79,9 +79,11 @@
 
         async function getCurrentUser() {
           try {
+            // Fetch session data
             const response = await fetch('/api/users/me');
 
-            if (!res.ok) throw new Error(result.error || 'Checking id failed');
+            // Check ersponse
+            if (!response.ok) throw new Error( 'Checking id failed');
 
             user.value = await response.json();
             console.log('Id retrieved');
