@@ -53,11 +53,15 @@
                         // Fetch the image
                         const dogImage = await fetch('https://dog.ceo/api/breeds/image/random');
                         const dogData = await dogImage.json();
+                        // If image has been successfully returned
                         if (dogData.status === 'success') {
+                            // Set image src
                             this.dogSrc = dogData.message;
                         }
                     } catch (err) {
+                        // Log error
                         console.log('Error retrieving image');
+                        // Set src tag to empty
                         this.dogSrc = '';
                     }
                 }
