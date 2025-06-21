@@ -67,9 +67,11 @@
               const imageResponse = await fetch('https://dog.ceo/api/breeds/image/random');
               if (imageResponse.ok) {
                 const imageData = await imgRes.json();
-                dog.imageUrl = imageData
-              }
+                dog.imageUrl = imageData.message;
+              } else
+              dog.imageUrl = ''
             }
+            console.log('List retrieved')
           } catch (err) {
             console.error('Error getting dog list', err);
           }
