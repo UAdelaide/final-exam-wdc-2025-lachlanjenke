@@ -180,9 +180,8 @@ section {
     border-radius: 5px;
 }
 
-.rank-table {
+#dogTable {
   border-collapse: collapse;
-  /* avoid the horizontal spaces between cells */
   width: 640px;
   font-size: 120%;
 }
@@ -196,7 +195,7 @@ section {
 }
 
 #dogTabletr:nth-child(even) {
-  background-color: rgb(106, 101, 125);
+  background-color: rgb(184, 184, 184);
 }
 
 #dogTable th {
