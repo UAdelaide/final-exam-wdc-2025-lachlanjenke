@@ -130,11 +130,11 @@
           try {
             const response = await fetch('/api/users/dogs');
             if (!response.ok) {
-              ownedDogs.value = '';
+              ownedDogs.value = [];
               console.error('Error loading dogs');
             }
 
-            const dogData = await res.json();
+            const dogData = await response.json();
             ownedDogs.value = data;
           } catch (err) {
             error.value = 'Could not load your dogs';
